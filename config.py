@@ -12,8 +12,12 @@ class ProductionConfig(Config):
 
 
 class DevelopmentConfig(Config):
+
+    SECRET_KEY = "MY-SUPER-SECRET-KEY"
+
     TESTING = DEBUG = True
 
     DATABASE_URI = "sqlite:///:memory:"
 
     SQLALCHEMY_DATABASE_URI = DATABASE_URI
+

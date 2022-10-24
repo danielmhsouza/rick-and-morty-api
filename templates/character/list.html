@@ -24,7 +24,7 @@
             <div class="content-menu">
                 <ul>
                     <li>
-                        <a href="../index">
+                        <a href="/">
                             <p>Início</p>
                             <span class="material-symbols-outlined">
                                 home
@@ -32,7 +32,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/list.html">
+                        <a href="./">
                             <p>Personagens</p>
                             <span class="material-symbols-outlined">
                                 account_circle
@@ -58,6 +58,7 @@
         </div>
 
         <div class="box">
+            <div class="box-end"><a href="./new" class="btn-green">Criar Personagem</a> </div>
             <table class="table">
                 <thead>
                     <th>ID</th>
@@ -67,18 +68,19 @@
                 {% for character in characters %}
                     <tr>
                         <th data-title="ID">{{ character.id }}</th>
-                        <td data-title="Nome">{{ character.nome }}</td>
+                        <td data-title="Nome">{{ character.name }}</td>
                     </tr>
+                {% endfor %}
                 </tbody>
-                {% end for %}
+
             </table>
         </div>
 
-        <footer>
-            <p>{{ now }}</p>
-        </footer>
-    </main>
 
+    </main>
+    <footer class="footer">
+            <p>&#169 By Daniel M.</p>
+    </footer>
 
 
 

@@ -1,1 +1,1 @@
-# rick-and-morty-api
+# rick-and-morty-web-app

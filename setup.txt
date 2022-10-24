@@ -1,4 +1,0 @@
-Antes de rodar a aplicação, certifique- se de que as dependências estão corretamente instaladas com o seguinte comando:
-
-(terminal)
-~$ pip install -r ./requirements.txt
